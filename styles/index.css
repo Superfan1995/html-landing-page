@@ -1,0 +1,213 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+h1,
+h2 {
+	font-family: "Roboto", sans-serif;
+	margin: 1em 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+/* Elements
+--------------------------------------------- */
+
+section,
+aside {
+	padding: 0 1rem;
+}
+
+
+
+/* Links
+--------------------------------------------- */
+
+a,
+a:visited { 
+	color: #008000;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
+}
+
+a:focus {
+	outline: 1px dotted;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+
+.site-header {
+    background-color: #faebd7;
+}
+
+/* Main
+--------------------------------------------- */
+
+.projects-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1em;
+    margin-bottom: 2em;
+}
+
+.site-header {
+    height: 5em;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1.25em;
+}
+
+.header-wrapper p {
+    display: block;
+    height: 100%;
+    font-size: 1.25em;
+    margin-left: 1em;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-nav a {
+    font-size: 1.25em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.about-text {
+    font-size: 1.25em;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    min-width: 16em;
+}
+
+.project {
+    display: block;
+    background-color: #ffe4c4;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+	border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    padding: 1em;
+    width: 18em;
+}
+
+.project-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-text p {
+    display: block;
+    height: 2.5em;
+}
+
+.project-link {
+    display: block;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: #008000;
+    width: 50%;
+    margin: auto;
+    padding: 0.5em;
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+/* Footer
+--------------------------------------------- */
+
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #faebd7;
+    padding-top: 1em;
+}
+
+.contact-section {
+    align-self: center;
+}
+
+.contact-section p {
+    font-size: 1.5em;
+}
+
+.copyright {
+    align-self: center;
+}
