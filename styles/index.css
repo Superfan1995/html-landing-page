@@ -23,7 +23,7 @@
 --------------------------------------------- */
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", 'Times New Roman', Times, serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -69,9 +69,10 @@ aside {
 /* Links
 --------------------------------------------- */
 
+/* Links Code based on assignment 4 */
 a,
 a:visited { 
-	color: #008000;
+	color: #005700;
 	text-decoration: none;
 }
 
@@ -99,13 +100,16 @@ a:focus {
 /* Main
 --------------------------------------------- */
 
+main {
+    margin-bottom: 3em;
+}
+
 .projects-wrapper {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 1em;
-    margin-bottom: 2em;
 }
 
 .site-header {
@@ -150,7 +154,7 @@ a:focus {
 
 .project {
     display: block;
-    background-color: #ffe4c4;
+    background-color: #f4ddbf;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 	border-bottom-left-radius: 1em;
@@ -178,7 +182,7 @@ a:focus {
     border-top-right-radius: 0.5em;
 	border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
-    background-color: #008000;
+    background-color: #225ba1;
     width: 50%;
     margin: auto;
     padding: 0.5em;
@@ -202,10 +206,27 @@ a:focus {
 
 .contact-section {
     align-self: center;
+    margin-bottom: 1.5em;
 }
 
 .contact-section p {
     font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.contact-method {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-method img {
+    min-width: 2em;
+    min-height: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .copyright {
