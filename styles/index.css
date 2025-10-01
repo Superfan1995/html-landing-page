@@ -28,7 +28,10 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #000000;
-	background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    background-image: url('../media/pexels-pixelcop-2680270.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1,
@@ -93,10 +96,6 @@ a:focus {
 /* Header
 --------------------------------------------- */
 
-.site-header {
-    background-color: #faebd7;
-}
-
 /* Main
 --------------------------------------------- */
 
@@ -109,11 +108,11 @@ main {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 1em;
+    gap: 1em;
 }
 
 .site-header {
-    height: 5em;
+    background-color: #F6ECC5;
 }
 
 .header-wrapper {
@@ -149,12 +148,14 @@ main {
     margin: auto;
     width: 60%;
     text-align: center;
-    min-width: 16em;
+    min-width: 15em;
 }
 
 .project {
     display: block;
-    background-color: #f4ddbf;
+    background-color: #F6ECC5;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 	border-bottom-left-radius: 1em;
@@ -200,7 +201,7 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #faebd7;
+    background-color: #F6ECC5;
     padding-top: 1em;
 }
 
