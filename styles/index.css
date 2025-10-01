@@ -28,10 +28,10 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #000000;
-    /*background-color: #ffffff;*/
-    background-image: url('../media/pexels-pixelcop-2680270.svg');
+    background-color: #2ab3c8;
+    /*background-image: url('../media/pexels-roman-odintsov-4871017.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 h1,
