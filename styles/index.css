@@ -130,7 +130,7 @@ main section {
 --------------------- */
 
 .site-header {
-    background-color: #e8f6c5;
+    background-color: #F6ECC5;
 }
 
 .header-wrapper {
@@ -156,10 +156,20 @@ main section {
     margin-bottom: 0.5em;
 }
 
-.header-nav a {
-    font-size: 1.25em;
+.header-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-list li {
+    display: inline-block;
     margin-left: 1em;
     margin-right: 1em;
+}
+
+.header-list li a {
+    font-size: 1.25em;
 }
 
 @media (min-width: 50em) {
@@ -183,7 +193,7 @@ main section {
         height: 100%;
     }
 
-    .header-nav a {
+    .header-list li {
         margin-left: 1em;
         margin-right: 1em;
     }
@@ -213,7 +223,7 @@ main section {
 	border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
     padding: 1em;
-    width: 18em;
+    width: 20em;
 }
 
 .project-text {
@@ -249,6 +259,12 @@ main section {
 .project-link:active {
     text-decoration: none;
 	background-color: #d91717;
+}
+
+.project:hover {
+    border: #000000;
+    border-style: solid;
+    border-width: 2px;
 }
 
 
