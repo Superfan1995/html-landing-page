@@ -28,10 +28,10 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #000000;
-    background-color: #2ab3c8;
-    /*background-image: url('../media/pexels-roman-odintsov-4871017.svg');
+    /*background-color: #87d9e5;*/
+    background-image: url('../media/background.svg');
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
 }
 
 h1,
@@ -42,12 +42,14 @@ h2 {
 
 h1 {
     text-align: center;
-    font-size: 5em;
+    font-size: 3.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 h3 {
@@ -57,6 +59,17 @@ h3 {
 
 p {
 	margin: 0 0 1.5em;
+}
+
+@media (min-width: 50em) {
+
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
 }
 
 /* Elements
@@ -113,30 +126,34 @@ main section {
     gap: 1em;
 }
 
+/* head section
+--------------------- */
+
 .site-header {
-    background-color: #F6ECC5;
+    background-color: #e8f6c5;
 }
 
 .header-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    justify-items: center;
     padding-top: 1.25em;
 }
 
 .header-wrapper p {
     display: block;
-    height: 100%;
+    align-self: center;
     font-size: 1.25em;
-    margin-left: 1em;
+    margin-bottom: 0.5em;
 }
 
 .header-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 100%;
+    margin-bottom: 0.5em;
 }
 
 .header-nav a {
@@ -145,6 +162,36 @@ main section {
     margin-right: 1em;
 }
 
+@media (min-width: 50em) {
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 1.25em;
+    }
+
+    .header-wrapper p {
+        margin-left: 1em;
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .header-nav a {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+/* about section
+--------------------- */
+
 .about-text {
     font-size: 1.25em;
     margin: auto;
@@ -152,6 +199,9 @@ main section {
     text-align: center;
     min-width: 15em;
 }
+
+/* project section
+--------------------- */
 
 .project {
     display: block;
